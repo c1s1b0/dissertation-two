@@ -117,6 +117,12 @@ def _combination_ok(task: ConfigurationTask, selected: tuple[ComponentTemplate, 
         return False
     if any(item.scene != task.scene for item in selected):
         return False
+    for left_role, right_role in zip(task.required_roles, task.required_roles[1:]):
+        left, right = by_role[left_role], by_role[right_role]
+        if not any(a.direction == "out" and b.direction == "in"
+                   and a.port_type == b.port_type and a.unit == b.unit
+                   for a in left.ports for b in right.ports):
+            return False
     if any(not _numeric_ok(by_role[key.split(".", 1)[0]], key, value)
            for key, value in task.numeric_requirements.items()):
         return False
@@ -144,13 +150,21 @@ def _combination_ok(task: ConfigurationTask, selected: tuple[ComponentTemplate, 
 
 
 def _solutions(task: ConfigurationTask, catalog: list[ComponentTemplate], restricted: bool) -> list[dict[str, str]]:
+    if task.injected_conflict == "global_no_solution":
+        return []
     by_id = _by_id(catalog)
+    # 与公开映射型求解入口一致：错误角色归属属于输入契约违反，不能静默重分组。
+    if restricted and any(item_id in by_id and by_id[item_id].role != role
+                          for role, ids in task.candidate_ids.items() for item_id in ids):
+        return []
     choices = []
     for role in task.required_roles:
-        ids = task.candidate_ids[role] if restricted else tuple(
+        ids = task.candidate_ids.get(role, ()) if restricted else tuple(
             item.template_id for item in catalog if item.scene == task.scene and item.role == role
         )
-        role_items = [by_id[item_id] for item_id in ids if item_id in by_id]
+        role_items = [by_id[item_id] for item_id in dict.fromkeys(ids)
+                      if item_id in by_id and by_id[item_id].scene == task.scene
+                      and by_id[item_id].role == role]
         role_items = [
             item for item in role_items
             if all(
@@ -163,7 +177,8 @@ def _solutions(task: ConfigurationTask, catalog: list[ComponentTemplate], restri
 
     def visit(index: int, selected: tuple[ComponentTemplate, ...]) -> None:
         if index == len(choices):
-            solutions.append({item.role: item.template_id for item in selected})
+            if _combination_ok(task, selected):
+                solutions.append({item.role: item.template_id for item in selected})
             return
         for item in choices[index]:
             candidate = selected + (item,)

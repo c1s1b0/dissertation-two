@@ -1,0 +1,11 @@
+{
+  "scripts/cmc_revision_20261106.py": "4572e4bb84ebee8cdddd8c8f459d1487095c14a29b5501d5cd7fd4751ddff0ec",
+  "tests/test_cmc_revision_20261106.py": "9b3bc7e465641e29d9f9cc2e73b368bb472d15287e965510dbcfe384ff1c6345",
+  "research_artifacts/cmc-revision-20261106/runs.csv": "52356092db5a0ceb04657042f9884f6dc41e16d6c7081740192f79df12692e0f",
+  "research_artifacts/cmc-revision-20261106/ordering.csv": "f8eb9c61f231df7342457a84af677471ec8cf98eac6a37dbc66a86e8fa719016",
+  "research_artifacts/cmc-revision-20261106/benchmark.json": "73966070c542dde9673740d250f764d1e7f9aef4e7954b1e1608a247fa67548d",
+  "research_artifacts/cmc-revision-20261106/summary.json": "4bb467c49d80e32946fccbc4fe637b838d1e5159c022d33ac84a0877654dcbb8",
+  "research_artifacts/cmc-revision-20261106/audit.json": "fce3541d4256c276311878934ce43453387f9f7e6537b28d3a0dd308fc5fca14",
+  "research_artifacts/cmc-revision-20261106/input_manifest.json": "a824ce773df51aa306b0b7317e90c637a482232047e6d94148af147a0ecb4dfb",
+  "research_artifacts/cmc-revision-20261106/返修实验说明.md": "1a81c26a69e4976453705e24a82cd9e969aeb0840deae4d70a55145c6e9dcba8"
+}

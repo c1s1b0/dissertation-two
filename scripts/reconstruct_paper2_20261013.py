@@ -5,6 +5,7 @@ from collections import defaultdict, Counter
 from dataclasses import replace
 from pathlib import Path
 import numpy as np
+from artifact_paths import artifact_root
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
@@ -12,8 +13,9 @@ from paper2_dynamic_agents.experiment.schema import ComponentTemplate, TypedPort
 from paper2_dynamic_agents.experiment.mechanism import _coerce_task
 from paper2_dynamic_agents.experiment.solver import solve_subgraph, _hard_constraint_failures
 
-OUT = ROOT / 'research_artifacts/reconstruction-20261013'
-BENCH = ROOT / 'research_artifacts/benchmarks/formal-20260816'
+ARTIFACTS = artifact_root(ROOT)
+OUT = ARTIFACTS / 'reconstruction-20261013'
+BENCH = ARTIFACTS / 'benchmarks/formal-20260816'
 SEED = 20261013
 
 def jsonl(p):
@@ -60,7 +62,7 @@ def load_inputs():
            ('formal_llm_runs/main-v5-postaudit-ablation-test-20260817/results.jsonl',{'P-Typed','P-LLMRepair'})]
     records={}
     for rel,methods in specs:
-        p=ROOT/'research_artifacts'/rel;paths.append(p)
+        p=ARTIFACTS/rel;paths.append(p)
         for r in jsonl(p):
             if r['method'] in methods and r['task_id'] in tasks and r['split']=='test':
                 records[r['task_id'],r['method'],r['repeat']]=r

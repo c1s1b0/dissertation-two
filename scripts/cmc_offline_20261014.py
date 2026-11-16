@@ -18,9 +18,9 @@ import reconstruct_paper2_20261013 as old
 from paper2_dynamic_agents.experiment.solver import _ports_compatible
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'research_artifacts/cmc-offline-20261014'
-AUDIT=ROOT/'research_artifacts/cmc-audit-input-20261014'
-OLD=ROOT/'research_artifacts/reconstruction-20261013'
+OUT=old.ARTIFACTS/'cmc-offline-20261014'
+AUDIT=old.ARTIFACTS/'cmc-audit-input-20261014'
+OLD=old.ARTIFACTS/'reconstruction-20261013'
 STRATA=[('A','configuration'),('A','repair'),('B','configuration'),('B','repair')]
 
 def dump(path,obj):
@@ -104,7 +104,7 @@ def summarize_audit(rows):
       total_billed_tokens=None,monetary_cost=None)
 
 def export_audit():
-    path=ROOT/'research_artifacts/formal_llm_runs/main-v5-postaudit-test-20260817/llm_audit.jsonl'
+    path=old.ARTIFACTS/'formal_llm_runs/main-v5-postaudit-test-20260817/llm_audit.jsonl'
     fields=['task_id','repeat','stage','task_attempt','attempt','retry_index','status','http_status','error_type','latency_ms','usage']
     rows=[]
     for line,r in enumerate(old.jsonl(path),1):

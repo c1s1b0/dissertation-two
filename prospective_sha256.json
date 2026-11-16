@@ -1,0 +1,17 @@
+{
+  "scripts/cmc_prospective_20261106.py": "5f9684c5fec4c1e8258d7b3ff26371d2fab7aee5a4b2ba3c38cc6684ef94343b",
+  "scripts/verify_cmc_prospective_20261106.py": "885a0256836008cd90ec7e6d579d704e3c355e2be10bc62e36c0b82c62f8e5e1",
+  "tests/test_cmc_prospective_20261106.py": "1a72550271db6f2e32302a115ba5ec3b41f02e3e6a86decc3ff5b8569b8436cf",
+  "research_artifacts/cmc-prospective-20261106/protocol.json": "194867a5c7845e73a67839d841edb441550fc8afb5bf60d4c98c2a1ba9d0e802",
+  "research_artifacts/cmc-prospective-20261106/prompts.json": "ff53cfd514baf1d32bcc85a7ed7a323e48811ec3b2666df1ded12dc58cf9a33f",
+  "research_artifacts/cmc-prospective-20261106/trials.jsonl": "74b37a09d2eab2cffd05254f407f73c11ffe1bba557dcc0de8d49f300356b16a",
+  "research_artifacts/cmc-prospective-20261106/summary.json": "66dc5170f982883670fd05c9945ea67ddd9011df970367e887475adddad060c8",
+  "research_artifacts/cmc-prospective-20261106/verification.json": "ada7e7c3dda0f7dbdc519e7b09d07c72bd780b4712d2affa078dfccb4db36238",
+  "research_artifacts/cmc-prospective-20261106/model_manifest.json": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "research_artifacts/cmc-prospective-20261106/复现说明.md": "8cb0719e6784ec754886166f578c5c35495bef9e30c2fcb90a9a37e8bfef1077",
+  "research_artifacts/cmc-prospective-grammar-20261106/protocol.json": "8425def0f8b5a273634a0cb7050359d2f68b16c819a44e4b7627e9c7c266f3d6",
+  "research_artifacts/cmc-prospective-grammar-20261106/prompts.json": "ff53cfd514baf1d32bcc85a7ed7a323e48811ec3b2666df1ded12dc58cf9a33f",
+  "research_artifacts/cmc-prospective-grammar-20261106/grammars.json": "86902f440d8546ec9d320f3aa721adb35563ce27a28fff19b5ee23e04b1f289a",
+  "research_artifacts/cmc-prospective-grammar-20261106/trials.jsonl": "56fd6ea6860368f5ba64e612f4fec997e5874c6cfa43d7bcf87e4a2cf4370dcd",
+  "research_artifacts/cmc-prospective-grammar-20261106/summary.json": "af239266cca6cea71deb1994205be60e5972b61c332ee5c60269ba1d904e96a5"
+}

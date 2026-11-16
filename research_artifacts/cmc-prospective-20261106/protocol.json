@@ -1,0 +1,36 @@
+{
+  "repository": "https://ollama.com/library/qwen3:8b",
+  "manifest_sha256": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "weight_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+  "model": "Qwen3-8B",
+  "quantization": "Q4_K_M",
+  "thinking": false,
+  "engine_sha256": "9691cccc62823a54330bae6564d3ad6a8df20d8cfe0361f49f8a56921ae77699",
+  "engine_version": "6000 (4762ad73); clang 19.1.5 x86_64-pc-windows-msvc",
+  "hardware_device_name": "AMD Radeon RX 9070 GRE",
+  "hardware_device": "Vulkan0",
+  "generation": {
+    "n_predict": 192,
+    "temperature": 0.3,
+    "top_p": 0.95,
+    "top_k": 40,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "cache_prompt": true,
+    "stop": [
+      "<|im_end|>",
+      "<|endoftext|>"
+    ]
+  },
+  "seeds": [
+    20261106,
+    20261107,
+    20261108
+  ],
+  "benchmark_sha256": "73966070c542dde9673740d250f764d1e7f9aef4e7954b1e1608a247fa67548d",
+  "trials": 72,
+  "context": 8192,
+  "experimental_request_limit": 72,
+  "remote_model_calls": 0,
+  "quota_per_role": 1
+}

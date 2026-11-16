@@ -1,0 +1,33 @@
+{
+  "seed": 20261109,
+  "stage1_seed": 20261106,
+  "stage1_sha256": "56fd6ea6860368f5ba64e612f4fec997e5874c6cfa43d7bcf87e4a2cf4370dcd",
+  "benchmark_sha256": "73966070c542dde9673740d250f764d1e7f9aef4e7954b1e1608a247fa67548d",
+  "weights_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+  "manifest_sha256": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "engine_sha256": "9691cccc62823a54330bae6564d3ad6a8df20d8cfe0361f49f8a56921ae77699",
+  "cases": 24,
+  "request_limit": 24,
+  "remote_calls": 0,
+  "repeats_per_task": 1,
+  "role_policy": "fewest unary-valid candidates in the frozen pool; ties by role order",
+  "primary": "Qwen stage 2 versus fixed first proposal; exact paired McNemar",
+  "comparators": [
+    "Rule",
+    "Support"
+  ],
+  "invalid_policy": "no addition; separately count pipeline failure",
+  "params": {
+    "n_predict": 192,
+    "temperature": 0.3,
+    "top_p": 0.95,
+    "top_k": 40,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "cache_prompt": true,
+    "stop": [
+      "<|im_end|>",
+      "<|endoftext|>"
+    ]
+  }
+}

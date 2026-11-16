@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Any, Iterable, Mapping
 
 from .schema import ComponentTemplate, ConfigurationTask
-from .solver import enumerate_feasible_assignments, solve_full, solve_subgraph
+from .solver import enumerate_feasible_assignments, solve_subgraph
 
 
 @dataclass(frozen=True)
@@ -164,10 +164,8 @@ def replay_pool(
     grouped = _group_ids(task_object, clean_ids, by_id)
     required_roles = tuple(task_object.required_roles)
     role_coverage = {role: len(grouped.get(role, ())) for role in required_roles}
-    if pool_name == "full_pool" and set(clean_ids) == {item.template_id for item in items if item.scene == scene}:
-        result = solve_full(task_object, items)
-    else:
-        result = solve_subgraph(task_object, grouped, items, typed=typed)
+    # 全目录同样走显式 typed 参数，避免专用入口静默重新开启类型检查。
+    result = solve_subgraph(task_object, grouped, items, typed=typed)
     violations = list(result.violations)
     if any(count == 0 for count in role_coverage.values()) and "role_coverage" not in violations:
         violations.append("role_coverage")
@@ -298,6 +296,8 @@ def analyze_task(
     """完成单个任务的候选池重建、反事实重放和机制分类。"""
 
     items = list(catalog)
+    p_rows = list(p_rows)
+    p_llm_rows = list(p_llm_rows)
     snapshot = reconstruct_pools(task, p_rows, p_llm_rows, items)
     replays: dict[str, Any] = {
         "p_typed": replay_pool(task, "p_pool", snapshot.p_pool, items, typed=True),
@@ -318,7 +318,7 @@ def analyze_task(
         "pool_snapshot": snapshot,
         "replays": replays,
         "classification": classification,
-        "p_row": dict(p_rows[0]) if isinstance(p_rows, list) and p_rows else None,
+        "p_row": dict(p_rows[0]) if p_rows else None,
         "b0_row": dict(b0_row) if b0_row else None,
     }
 

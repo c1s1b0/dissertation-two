@@ -1,0 +1,138 @@
+[
+  {
+    "scene": "A",
+    "stratum": "configuration",
+    "comparator": "BM25",
+    "n": 100,
+    "a_success": 100,
+    "b_success": 100,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "a_only": 0,
+    "b_only": 0,
+    "p_exact": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "scene": "A",
+    "stratum": "configuration",
+    "comparator": "E5",
+    "n": 100,
+    "a_success": 100,
+    "b_success": 100,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "a_only": 0,
+    "b_only": 0,
+    "p_exact": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "scene": "A",
+    "stratum": "repair",
+    "comparator": "BM25",
+    "n": 100,
+    "a_success": 90,
+    "b_success": 90,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "a_only": 0,
+    "b_only": 0,
+    "p_exact": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "scene": "A",
+    "stratum": "repair",
+    "comparator": "E5",
+    "n": 100,
+    "a_success": 90,
+    "b_success": 90,
+    "difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "a_only": 0,
+    "b_only": 0,
+    "p_exact": 1.0,
+    "p_holm": 1.0
+  },
+  {
+    "scene": "B",
+    "stratum": "configuration",
+    "comparator": "BM25",
+    "n": 100,
+    "a_success": 92,
+    "b_success": 83,
+    "difference": 0.09,
+    "ci95": [
+      0.02,
+      0.16
+    ],
+    "a_only": 11,
+    "b_only": 2,
+    "p_exact": 0.0224609375,
+    "p_holm": 0.1123046875
+  },
+  {
+    "scene": "B",
+    "stratum": "configuration",
+    "comparator": "E5",
+    "n": 100,
+    "a_success": 92,
+    "b_success": 77,
+    "difference": 0.15,
+    "ci95": [
+      0.08,
+      0.23
+    ],
+    "a_only": 16,
+    "b_only": 1,
+    "p_exact": 0.000274658203125,
+    "p_holm": 0.00164794921875
+  },
+  {
+    "scene": "B",
+    "stratum": "repair",
+    "comparator": "BM25",
+    "n": 100,
+    "a_success": 90,
+    "b_success": 69,
+    "difference": 0.21,
+    "ci95": [
+      0.13,
+      0.29
+    ],
+    "a_only": 21,
+    "b_only": 0,
+    "p_exact": 9.5367431640625e-07,
+    "p_holm": 7.62939453125e-06
+  },
+  {
+    "scene": "B",
+    "stratum": "repair",
+    "comparator": "E5",
+    "n": 100,
+    "a_success": 90,
+    "b_success": 73,
+    "difference": 0.17,
+    "ci95": [
+      0.1,
+      0.25
+    ],
+    "a_only": 17,
+    "b_only": 0,
+    "p_exact": 1.52587890625e-05,
+    "p_holm": 0.0001068115234375
+  }
+]

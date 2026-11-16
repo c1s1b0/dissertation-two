@@ -1,0 +1,17 @@
+{
+  "by_scene": {
+    "A": {
+      "trials": 12,
+      "valid": 12,
+      "feasible": 6
+    },
+    "B": {
+      "trials": 12,
+      "valid": 12,
+      "feasible": 0
+    }
+  },
+  "valid": 24,
+  "feasible": 6,
+  "trials": 24
+}

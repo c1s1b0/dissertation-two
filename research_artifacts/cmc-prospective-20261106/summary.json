@@ -1,0 +1,1485 @@
+{
+  "overall": {
+    "trials": 72,
+    "status": {
+      "ineligible_id": 71,
+      "valid": 1
+    },
+    "feasible": 0,
+    "valid_no_witness": 1,
+    "valid_recall": 0.29411764705882354,
+    "valid_solution_fraction": 0.0,
+    "median_latency_s": 1.1700508000067202
+  },
+  "by_scene": {
+    "A": {
+      "trials": 36,
+      "status": {
+        "ineligible_id": 36
+      },
+      "feasible": 0,
+      "valid_no_witness": 0,
+      "valid_recall": null,
+      "valid_solution_fraction": null,
+      "median_latency_s": 1.1724226999940583
+    },
+    "B": {
+      "trials": 36,
+      "status": {
+        "ineligible_id": 35,
+        "valid": 1
+      },
+      "feasible": 0,
+      "valid_no_witness": 1,
+      "valid_recall": 0.29411764705882354,
+      "valid_solution_fraction": 0.0,
+      "median_latency_s": 1.006536650005728
+    }
+  },
+  "primary_support": {
+    "n": 24,
+    "a_success": 0,
+    "b_success": 11,
+    "difference": -0.4583333333333333,
+    "ci95": [
+      -0.6666666666666666,
+      -0.25
+    ],
+    "a_only": 0,
+    "b_only": 11,
+    "p_exact": 0.0009765625
+  },
+  "secondary_rule": {
+    "n": 24,
+    "a_success": 0,
+    "b_success": 15,
+    "difference": -0.625,
+    "ci95": [
+      -0.7916666666666666,
+      -0.4166666666666667
+    ],
+    "a_only": 0,
+    "b_only": 15,
+    "p_exact": 6.103515625e-05
+  },
+  "initial_success": 2,
+  "llm_recovers_initial_miss": 0,
+  "tasks": [
+    {
+      "task_id": "A-test-20260816-0000",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.14285714285714285,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-011",
+          "A-DRIVE-012",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-017",
+          "A-TRANSMISSION-019",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-020",
+          "A-POSITIONER-001",
+          "A-POSITIONER-007",
+          "A-POSITIONER-008",
+          "A-POSITIONER-010"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.21428571428571427,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-011",
+          "A-DRIVE-012",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-017",
+          "A-TRANSMISSION-019",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-020",
+          "A-POSITIONER-001",
+          "A-POSITIONER-004",
+          "A-POSITIONER-008",
+          "A-POSITIONER-010"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21428571428571427,
+        "solution_fraction": 0.00408997955010225,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0002",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.13953488372093023,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-004",
+          "A-DRIVE-010",
+          "A-DRIVE-018",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-019",
+          "A-TRANSMISSION-020",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-005",
+          "A-CONVEYOR-014",
+          "A-CONVEYOR-015",
+          "A-POSITIONER-001",
+          "A-POSITIONER-006",
+          "A-POSITIONER-012",
+          "A-POSITIONER-015"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.20930232558139536,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-004",
+          "A-DRIVE-010",
+          "A-DRIVE-018",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-019",
+          "A-TRANSMISSION-020",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-005",
+          "A-CONVEYOR-014",
+          "A-CONVEYOR-015",
+          "A-POSITIONER-001",
+          "A-POSITIONER-004",
+          "A-POSITIONER-012",
+          "A-POSITIONER-015"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.23255813953488372,
+        "solution_fraction": 0.006024096385542169,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0004",
+      "scene": "A",
+      "Initial": {
+        "feasible": 1,
+        "candidate_recall": 0.14634146341463414,
+        "solution_fraction": 0.010344827586206896,
+        "search_nodes": 19
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-004",
+          "A-DRIVE-012",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-004",
+          "A-CONVEYOR-007",
+          "A-CONVEYOR-009",
+          "A-POSITIONER-001",
+          "A-POSITIONER-008",
+          "A-POSITIONER-014",
+          "A-POSITIONER-016"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21951219512195122,
+        "solution_fraction": 0.010344827586206896,
+        "search_nodes": 118
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-004",
+          "A-DRIVE-012",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-004",
+          "A-CONVEYOR-007",
+          "A-CONVEYOR-009",
+          "A-POSITIONER-001",
+          "A-POSITIONER-008",
+          "A-POSITIONER-014",
+          "A-POSITIONER-016"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.24390243902439024,
+        "solution_fraction": 0.013793103448275862,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0006",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.17073170731707318,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-009",
+          "A-DRIVE-015",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-014",
+          "A-TRANSMISSION-016",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-007",
+          "A-CONVEYOR-012",
+          "A-CONVEYOR-018",
+          "A-POSITIONER-001",
+          "A-POSITIONER-004",
+          "A-POSITIONER-005",
+          "A-POSITIONER-012"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.24390243902439024,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-009",
+          "A-DRIVE-015",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-014",
+          "A-TRANSMISSION-016",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-007",
+          "A-CONVEYOR-012",
+          "A-POSITIONER-001",
+          "A-POSITIONER-004",
+          "A-POSITIONER-005",
+          "A-POSITIONER-012"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.2682926829268293,
+        "solution_fraction": 0.0034482758620689655,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0008",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.15517241379310345,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-005",
+          "A-DRIVE-012",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-008",
+          "A-TRANSMISSION-020",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-016",
+          "A-CONVEYOR-019",
+          "A-POSITIONER-001",
+          "A-POSITIONER-014",
+          "A-POSITIONER-016",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22413793103448276,
+        "solution_fraction": 0.0016750418760469012,
+        "search_nodes": 65
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-005",
+          "A-DRIVE-012",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-008",
+          "A-TRANSMISSION-020",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-016",
+          "A-CONVEYOR-019",
+          "A-POSITIONER-001",
+          "A-POSITIONER-014",
+          "A-POSITIONER-016",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22413793103448276,
+        "solution_fraction": 0.0033500837520938024,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0010",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.13114754098360656,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-004",
+          "A-DRIVE-005",
+          "A-DRIVE-014",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-006",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-012",
+          "A-CONVEYOR-018",
+          "A-CONVEYOR-020",
+          "A-POSITIONER-007",
+          "A-POSITIONER-010",
+          "A-POSITIONER-011",
+          "A-POSITIONER-012"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.19672131147540983,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-004",
+          "A-DRIVE-005",
+          "A-DRIVE-014",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-006",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-012",
+          "A-CONVEYOR-020",
+          "A-POSITIONER-001",
+          "A-POSITIONER-010",
+          "A-POSITIONER-011",
+          "A-POSITIONER-012"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.19672131147540983,
+        "solution_fraction": 0.002849002849002849,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0012",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.16981132075471697,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-012",
+          "A-DRIVE-013",
+          "A-DRIVE-014",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-006",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-006",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-016",
+          "A-POSITIONER-005",
+          "A-POSITIONER-007",
+          "A-POSITIONER-010",
+          "A-POSITIONER-013"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.24528301886792453,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-002",
+          "A-DRIVE-012",
+          "A-DRIVE-013",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-002",
+          "A-TRANSMISSION-006",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-006",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-016",
+          "A-POSITIONER-001",
+          "A-POSITIONER-005",
+          "A-POSITIONER-010",
+          "A-POSITIONER-013"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.24528301886792453,
+        "solution_fraction": 0.00546448087431694,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0014",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.21052631578947367,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-010",
+          "A-DRIVE-014",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-004",
+          "A-CONVEYOR-010",
+          "A-CONVEYOR-018",
+          "A-POSITIONER-001",
+          "A-POSITIONER-008",
+          "A-POSITIONER-016",
+          "A-POSITIONER-017"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.2894736842105263,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-010",
+          "A-DRIVE-014",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-002",
+          "A-TRANSMISSION-004",
+          "A-TRANSMISSION-016",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-004",
+          "A-CONVEYOR-010",
+          "A-POSITIONER-001",
+          "A-POSITIONER-008",
+          "A-POSITIONER-016",
+          "A-POSITIONER-017"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.3157894736842105,
+        "solution_fraction": 0.004672897196261682,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0016",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.17307692307692307,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-005",
+          "A-DRIVE-010",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-002",
+          "A-TRANSMISSION-007",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-005",
+          "A-CONVEYOR-011",
+          "A-CONVEYOR-017",
+          "A-POSITIONER-001",
+          "A-POSITIONER-003",
+          "A-POSITIONER-006",
+          "A-POSITIONER-020"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.25,
+        "solution_fraction": 0.015384615384615385,
+        "search_nodes": 19
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-005",
+          "A-DRIVE-010",
+          "A-DRIVE-016",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-002",
+          "A-TRANSMISSION-007",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-005",
+          "A-CONVEYOR-011",
+          "A-CONVEYOR-017",
+          "A-POSITIONER-001",
+          "A-POSITIONER-003",
+          "A-POSITIONER-006",
+          "A-POSITIONER-020"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.25,
+        "solution_fraction": 0.03076923076923077,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0018",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.14035087719298245,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-008",
+          "A-DRIVE-017",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-007",
+          "A-TRANSMISSION-008",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-010",
+          "A-CONVEYOR-013",
+          "A-CONVEYOR-016",
+          "A-POSITIONER-001",
+          "A-POSITIONER-016",
+          "A-POSITIONER-018",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21052631578947367,
+        "solution_fraction": 0.005434782608695652,
+        "search_nodes": 51
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-008",
+          "A-DRIVE-017",
+          "A-DRIVE-019",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-007",
+          "A-TRANSMISSION-008",
+          "A-TRANSMISSION-018",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-010",
+          "A-CONVEYOR-013",
+          "A-CONVEYOR-016",
+          "A-POSITIONER-001",
+          "A-POSITIONER-016",
+          "A-POSITIONER-018",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21052631578947367,
+        "solution_fraction": 0.007246376811594203,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0020",
+      "scene": "A",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.1774193548387097,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-003",
+          "A-DRIVE-004",
+          "A-DRIVE-007",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-013",
+          "A-CONVEYOR-015",
+          "A-POSITIONER-007",
+          "A-POSITIONER-011",
+          "A-POSITIONER-012",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.24193548387096775,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-003",
+          "A-DRIVE-004",
+          "A-DRIVE-007",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-005",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-008",
+          "A-CONVEYOR-013",
+          "A-CONVEYOR-015",
+          "A-POSITIONER-001",
+          "A-POSITIONER-011",
+          "A-POSITIONER-012",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.24193548387096775,
+        "solution_fraction": 0.00860832137733142,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "A-test-20260816-0022",
+      "scene": "A",
+      "Initial": {
+        "feasible": 1,
+        "candidate_recall": 0.16393442622950818,
+        "solution_fraction": 0.002849002849002849,
+        "search_nodes": 30
+      },
+      "Support": {
+        "ids": [
+          "A-DRIVE-002",
+          "A-DRIVE-006",
+          "A-DRIVE-015",
+          "A-DRIVE-017",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-007",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-002",
+          "A-CONVEYOR-003",
+          "A-CONVEYOR-018",
+          "A-CONVEYOR-019",
+          "A-POSITIONER-003",
+          "A-POSITIONER-007",
+          "A-POSITIONER-013",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22950819672131148,
+        "solution_fraction": 0.011396011396011397,
+        "search_nodes": 134
+      },
+      "Rule": {
+        "ids": [
+          "A-DRIVE-001",
+          "A-DRIVE-006",
+          "A-DRIVE-015",
+          "A-DRIVE-017",
+          "A-TRANSMISSION-001",
+          "A-TRANSMISSION-003",
+          "A-TRANSMISSION-010",
+          "A-TRANSMISSION-017",
+          "A-CONVEYOR-001",
+          "A-CONVEYOR-003",
+          "A-CONVEYOR-018",
+          "A-CONVEYOR-019",
+          "A-POSITIONER-001",
+          "A-POSITIONER-003",
+          "A-POSITIONER-013",
+          "A-POSITIONER-019"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22950819672131148,
+        "solution_fraction": 0.008547008547008548,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0000",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.09375,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-002",
+          "B-MOTOR-009",
+          "B-MOTOR-014",
+          "B-MOTOR-020",
+          "B-GEARBOX-002",
+          "B-GEARBOX-006",
+          "B-GEARBOX-013",
+          "B-GEARBOX-014",
+          "B-COUPLING-002",
+          "B-COUPLING-016",
+          "B-COUPLING-019",
+          "B-COUPLING-020",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-006",
+          "B-SHAFT_SUPPORT-008"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21875,
+        "solution_fraction": 0.023255813953488372,
+        "search_nodes": 17
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-009",
+          "B-MOTOR-014",
+          "B-MOTOR-020",
+          "B-GEARBOX-002",
+          "B-GEARBOX-003",
+          "B-GEARBOX-013",
+          "B-GEARBOX-014",
+          "B-COUPLING-001",
+          "B-COUPLING-016",
+          "B-COUPLING-019",
+          "B-COUPLING-020",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-006",
+          "B-SHAFT_SUPPORT-008"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.1875,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0002",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.21212121212121213,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-003",
+          "B-MOTOR-007",
+          "B-MOTOR-011",
+          "B-MOTOR-013",
+          "B-GEARBOX-006",
+          "B-GEARBOX-009",
+          "B-GEARBOX-010",
+          "B-GEARBOX-018",
+          "B-COUPLING-002",
+          "B-COUPLING-005",
+          "B-COUPLING-012",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.3333333333333333,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-007",
+          "B-MOTOR-011",
+          "B-MOTOR-013",
+          "B-GEARBOX-003",
+          "B-GEARBOX-009",
+          "B-GEARBOX-010",
+          "B-GEARBOX-018",
+          "B-COUPLING-001",
+          "B-COUPLING-005",
+          "B-COUPLING-012",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.30303030303030304,
+        "solution_fraction": 0.041237113402061855,
+        "search_nodes": 17
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0004",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.12,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-002",
+          "B-MOTOR-003",
+          "B-MOTOR-006",
+          "B-MOTOR-011",
+          "B-GEARBOX-006",
+          "B-GEARBOX-012",
+          "B-GEARBOX-015",
+          "B-GEARBOX-019",
+          "B-COUPLING-002",
+          "B-COUPLING-003",
+          "B-COUPLING-008",
+          "B-COUPLING-009",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-012",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.2,
+        "solution_fraction": 0.037037037037037035,
+        "search_nodes": 1
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-002",
+          "B-MOTOR-006",
+          "B-MOTOR-011",
+          "B-GEARBOX-003",
+          "B-GEARBOX-012",
+          "B-GEARBOX-015",
+          "B-GEARBOX-019",
+          "B-COUPLING-002",
+          "B-COUPLING-003",
+          "B-COUPLING-008",
+          "B-COUPLING-009",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.24,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0006",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.14583333333333334,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-007",
+          "B-MOTOR-016",
+          "B-MOTOR-018",
+          "B-GEARBOX-001",
+          "B-GEARBOX-009",
+          "B-GEARBOX-013",
+          "B-GEARBOX-016",
+          "B-COUPLING-007",
+          "B-COUPLING-008",
+          "B-COUPLING-013",
+          "B-COUPLING-015",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-009",
+          "B-SHAFT_SUPPORT-013",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22916666666666666,
+        "solution_fraction": 0.02072538860103627,
+        "search_nodes": 10
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-007",
+          "B-MOTOR-016",
+          "B-MOTOR-018",
+          "B-GEARBOX-001",
+          "B-GEARBOX-009",
+          "B-GEARBOX-013",
+          "B-GEARBOX-016",
+          "B-COUPLING-001",
+          "B-COUPLING-007",
+          "B-COUPLING-013",
+          "B-COUPLING-015",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-009",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.22916666666666666,
+        "solution_fraction": 0.04145077720207254,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0008",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.09803921568627451,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-003",
+          "B-MOTOR-015",
+          "B-MOTOR-019",
+          "B-MOTOR-020",
+          "B-GEARBOX-001",
+          "B-GEARBOX-006",
+          "B-GEARBOX-013",
+          "B-GEARBOX-020",
+          "B-COUPLING-004",
+          "B-COUPLING-006",
+          "B-COUPLING-008",
+          "B-COUPLING-012",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-006",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.17647058823529413,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-015",
+          "B-MOTOR-019",
+          "B-MOTOR-020",
+          "B-GEARBOX-001",
+          "B-GEARBOX-003",
+          "B-GEARBOX-013",
+          "B-GEARBOX-020",
+          "B-COUPLING-001",
+          "B-COUPLING-004",
+          "B-COUPLING-006",
+          "B-COUPLING-012",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-006",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.1568627450980392,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0010",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.07407407407407407,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-002",
+          "B-MOTOR-003",
+          "B-MOTOR-009",
+          "B-MOTOR-014",
+          "B-GEARBOX-004",
+          "B-GEARBOX-006",
+          "B-GEARBOX-011",
+          "B-GEARBOX-012",
+          "B-COUPLING-003",
+          "B-COUPLING-008",
+          "B-COUPLING-012",
+          "B-COUPLING-017",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-010",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.18518518518518517,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-002",
+          "B-MOTOR-009",
+          "B-MOTOR-014",
+          "B-GEARBOX-003",
+          "B-GEARBOX-004",
+          "B-GEARBOX-011",
+          "B-GEARBOX-012",
+          "B-COUPLING-002",
+          "B-COUPLING-003",
+          "B-COUPLING-012",
+          "B-COUPLING-017",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-010",
+          "B-SHAFT_SUPPORT-015"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.18518518518518517,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0012",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.15625,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-002",
+          "B-MOTOR-008",
+          "B-MOTOR-018",
+          "B-GEARBOX-006",
+          "B-GEARBOX-012",
+          "B-GEARBOX-013",
+          "B-GEARBOX-014",
+          "B-COUPLING-002",
+          "B-COUPLING-004",
+          "B-COUPLING-007",
+          "B-COUPLING-008",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-014"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.28125,
+        "solution_fraction": 0.014705882352941176,
+        "search_nodes": 193
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-002",
+          "B-MOTOR-008",
+          "B-MOTOR-018",
+          "B-GEARBOX-001",
+          "B-GEARBOX-012",
+          "B-GEARBOX-013",
+          "B-GEARBOX-014",
+          "B-COUPLING-002",
+          "B-COUPLING-004",
+          "B-COUPLING-007",
+          "B-COUPLING-008",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-014"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.28125,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0014",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.15,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-006",
+          "B-MOTOR-007",
+          "B-MOTOR-011",
+          "B-GEARBOX-006",
+          "B-GEARBOX-015",
+          "B-GEARBOX-016",
+          "B-GEARBOX-020",
+          "B-COUPLING-002",
+          "B-COUPLING-003",
+          "B-COUPLING-004",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-014",
+          "B-SHAFT_SUPPORT-018"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.3,
+        "solution_fraction": 0.05714285714285714,
+        "search_nodes": 65
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-002",
+          "B-MOTOR-006",
+          "B-MOTOR-007",
+          "B-GEARBOX-003",
+          "B-GEARBOX-015",
+          "B-GEARBOX-016",
+          "B-GEARBOX-020",
+          "B-COUPLING-002",
+          "B-COUPLING-003",
+          "B-COUPLING-004",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-014",
+          "B-SHAFT_SUPPORT-018"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.3,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0016",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.14285714285714285,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-007",
+          "B-MOTOR-016",
+          "B-MOTOR-017",
+          "B-GEARBOX-001",
+          "B-GEARBOX-007",
+          "B-GEARBOX-014",
+          "B-GEARBOX-019",
+          "B-COUPLING-006",
+          "B-COUPLING-007",
+          "B-COUPLING-008",
+          "B-COUPLING-014",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-009",
+          "B-SHAFT_SUPPORT-010",
+          "B-SHAFT_SUPPORT-011"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.21428571428571427,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-003",
+          "B-MOTOR-007",
+          "B-MOTOR-016",
+          "B-GEARBOX-001",
+          "B-GEARBOX-007",
+          "B-GEARBOX-014",
+          "B-GEARBOX-019",
+          "B-COUPLING-001",
+          "B-COUPLING-006",
+          "B-COUPLING-007",
+          "B-COUPLING-014",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-009",
+          "B-SHAFT_SUPPORT-010",
+          "B-SHAFT_SUPPORT-011"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.21428571428571427,
+        "solution_fraction": 0.008298755186721992,
+        "search_nodes": 1
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0018",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.14705882352941177,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-004",
+          "B-MOTOR-011",
+          "B-MOTOR-015",
+          "B-GEARBOX-006",
+          "B-GEARBOX-007",
+          "B-GEARBOX-010",
+          "B-GEARBOX-018",
+          "B-COUPLING-002",
+          "B-COUPLING-008",
+          "B-COUPLING-009",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-005",
+          "B-SHAFT_SUPPORT-011",
+          "B-SHAFT_SUPPORT-018"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.23529411764705882,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-003",
+          "B-MOTOR-004",
+          "B-MOTOR-015",
+          "B-GEARBOX-001",
+          "B-GEARBOX-007",
+          "B-GEARBOX-010",
+          "B-GEARBOX-018",
+          "B-COUPLING-002",
+          "B-COUPLING-006",
+          "B-COUPLING-009",
+          "B-COUPLING-016",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-005",
+          "B-SHAFT_SUPPORT-011",
+          "B-SHAFT_SUPPORT-018"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.20588235294117646,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0020",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.23529411764705882,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-003",
+          "B-MOTOR-004",
+          "B-MOTOR-014",
+          "B-GEARBOX-002",
+          "B-GEARBOX-006",
+          "B-GEARBOX-014",
+          "B-GEARBOX-015",
+          "B-COUPLING-002",
+          "B-COUPLING-008",
+          "B-COUPLING-011",
+          "B-COUPLING-014",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.35294117647058826,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-003",
+          "B-MOTOR-004",
+          "B-MOTOR-014",
+          "B-GEARBOX-002",
+          "B-GEARBOX-003",
+          "B-GEARBOX-014",
+          "B-GEARBOX-015",
+          "B-COUPLING-002",
+          "B-COUPLING-006",
+          "B-COUPLING-011",
+          "B-COUPLING-014",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-003",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-009"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.29411764705882354,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    },
+    {
+      "task_id": "B-test-20260816-0022",
+      "scene": "B",
+      "Initial": {
+        "feasible": 0,
+        "candidate_recall": 0.17647058823529413,
+        "solution_fraction": 0.0,
+        "search_nodes": 81
+      },
+      "Support": {
+        "ids": [
+          "B-MOTOR-003",
+          "B-MOTOR-006",
+          "B-MOTOR-011",
+          "B-MOTOR-018",
+          "B-GEARBOX-006",
+          "B-GEARBOX-010",
+          "B-GEARBOX-012",
+          "B-GEARBOX-014",
+          "B-COUPLING-002",
+          "B-COUPLING-010",
+          "B-COUPLING-012",
+          "B-COUPLING-018",
+          "B-SHAFT_SUPPORT-002",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-013"
+        ],
+        "feasible": 1,
+        "candidate_recall": 0.35294117647058826,
+        "solution_fraction": 0.08695652173913043,
+        "search_nodes": 65
+      },
+      "Rule": {
+        "ids": [
+          "B-MOTOR-001",
+          "B-MOTOR-003",
+          "B-MOTOR-006",
+          "B-MOTOR-018",
+          "B-GEARBOX-003",
+          "B-GEARBOX-010",
+          "B-GEARBOX-012",
+          "B-GEARBOX-014",
+          "B-COUPLING-002",
+          "B-COUPLING-010",
+          "B-COUPLING-012",
+          "B-COUPLING-018",
+          "B-SHAFT_SUPPORT-001",
+          "B-SHAFT_SUPPORT-007",
+          "B-SHAFT_SUPPORT-008",
+          "B-SHAFT_SUPPORT-013"
+        ],
+        "feasible": 0,
+        "candidate_recall": 0.35294117647058826,
+        "solution_fraction": 0.0,
+        "search_nodes": 256
+      },
+      "llm_majority": 0
+    }
+  ]
+}

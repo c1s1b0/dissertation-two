@@ -7,10 +7,18 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from reconstruct_paper2_20261013 import *
 
 def all_witnesses(t,items):
-    roles=t.required_roles;by={r:[c for c in items if c.role==r] for r in roles}
-    grid=np.array(list(itertools.product(range(20),repeat=4)),dtype=np.int16)
+    roles=t.required_roles;by={r:[c for c in items if c.scene==t.scene and c.role==r] for r in roles}
+    # 独立向量枚举同样约束端口，不再借助冻结目录恰好同质的隐含前提。
+    grid=np.array(list(itertools.product(*(range(len(by[r])) for r in roles))),dtype=np.int32).reshape(-1,len(roles))
+    if not len(grid):return grid,by
     values={r:{f:np.array([c.parameters[f] for c in by[r]])[grid[:,j]] for f in by[r][0].parameters} for j,r in enumerate(roles)}
     valid=np.ones(len(grid),dtype=bool)
+    for j,(left_role,right_role) in enumerate(zip(roles,roles[1:])):
+        compatible=np.array([[any(a.direction=='out' and b.direction=='in'
+            and a.port_type==b.port_type and a.unit==b.unit
+            for a in left.ports for b in right.ports)
+            for right in by[right_role]] for left in by[left_role]],dtype=bool)
+        valid &= compatible[grid[:,j],grid[:,j+1]]
     for key,b in t.numeric_requirements.items():
         r,f,op=key.split('.');valid &= values[r][f]>=b if op=='min' else values[r][f]<=b
     if t.scene=='A':

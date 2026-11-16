@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "live_model_calls": 0,
+  "frozen_tasks": 400,
+  "historical_records_replayed": 6000,
+  "historical_feasibility_mismatches": [],
+  "independent_full_solution_count_mismatches": [],
+  "frozen_label_changes": [
+    "A-test-20260816-0001",
+    "A-test-20260816-0067",
+    "A-test-20260816-0089",
+    "A-test-20260816-0111",
+    "A-test-20260816-0133",
+    "A-test-20260816-0177",
+    "A-test-20260816-0199",
+    "B-test-20260816-0045",
+    "B-test-20260816-0067",
+    "B-test-20260816-0133",
+    "B-test-20260816-0155",
+    "B-test-20260816-0199"
+  ],
+  "forced_negative_controls": 20,
+  "generator_reconstruction": {
+    "A": {
+      "tasks": 200,
+      "label_changes": [
+        "A-test-20260816-0001",
+        "A-test-20260816-0067",
+        "A-test-20260816-0089",
+        "A-test-20260816-0111",
+        "A-test-20260816-0133",
+        "A-test-20260816-0177",
+        "A-test-20260816-0199"
+      ]
+    },
+    "B": {
+      "tasks": 200,
+      "label_changes": [
+        "B-test-20260816-0045",
+        "B-test-20260816-0067",
+        "B-test-20260816-0133",
+        "B-test-20260816-0155",
+        "B-test-20260816-0199"
+      ]
+    }
+  },
+  "code_sha256": {
+    "src/paper2_dynamic_agents/experiment/dataset.py": "141f5313a1bbe55701b7eb04a832ac5608801e204296b438ac403165d5489bbe",
+    "src/paper2_dynamic_agents/experiment/mechanism.py": "6e14c3b545a11d96781a5f2cc1ed7d1c3e907748ddc4922ffea1ebb9ed4a3550",
+    "src/paper2_dynamic_agents/experiment/solver.py": "34e5854a4e9c898e48899d911b7404ffc1fdddf3f7a4ee5a2aa653120b9c4564",
+    "scripts/artifact_paths.py": "3e77cc1adedf34b6b8288245c48fdfda5802de0e9842534406fdd990f3c7904f",
+    "scripts/reconstruction_diagnostics_20261013.py": "8881d5bc9d8efbe240c2b3715d3790c3345ec5b1a63ea1c55c832cb9fca441f5",
+    "scripts/audit_software_contracts_20261016.py": "1d21579471424fb52c63dd48725ec59fac2b8c7ea5a0d1272481a113500e15e6"
+  },
+  "scope": "本地正确性验证；不证明模型优越、物理可行、最优性或线上澄清能力"
+}

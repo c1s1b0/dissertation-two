@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "trials": 72,
+  "unique_keys": 72,
+  "exact_response_and_metrics_replay": true,
+  "task_majority_by_scene": {
+    "A": {
+      "initial": 2,
+      "model": 0,
+      "rule": 12,
+      "support": 5
+    },
+    "B": {
+      "initial": 0,
+      "model": 0,
+      "rule": 3,
+      "support": 6
+    }
+  },
+  "model_output_status": {
+    "ineligible_id": 71,
+    "valid": 1
+  },
+  "median_engine_ms": 1165.075,
+  "engine_timing_records": 72,
+  "generated_tokens": 4470,
+  "ineligible_role_assignments": {
+    "initial_id": 221
+  },
+  "responses_repeating_initial_ids": 71,
+  "exploratory_grammar": {
+    "by_scene": {
+      "A": {
+        "trials": 12,
+        "valid": 12,
+        "feasible": 6
+      },
+      "B": {
+        "trials": 12,
+        "valid": 12,
+        "feasible": 0
+      }
+    },
+    "valid": 24,
+    "feasible": 6,
+    "trials": 24
+  },
+  "free_first_seed_feasible": 0,
+  "grammar_only_success": 6,
+  "diagnostic_file_sha256": {
+    "protocol.json": "8425def0f8b5a273634a0cb7050359d2f68b16c819a44e4b7627e9c7c266f3d6",
+    "prompts.json": "ff53cfd514baf1d32bcc85a7ed7a323e48811ec3b2666df1ded12dc58cf9a33f",
+    "grammars.json": "86902f440d8546ec9d320f3aa721adb35563ce27a28fff19b5ee23e04b1f289a",
+    "trials.jsonl": "56fd6ea6860368f5ba64e612f4fec997e5874c6cfa43d7bcf87e4a2cf4370dcd",
+    "summary.json": "af239266cca6cea71deb1994205be60e5972b61c332ee5c60269ba1d904e96a5"
+  },
+  "live_calls_for_verification": 0,
+  "file_sha256": {
+    "protocol.json": "194867a5c7845e73a67839d841edb441550fc8afb5bf60d4c98c2a1ba9d0e802",
+    "prompts.json": "ff53cfd514baf1d32bcc85a7ed7a323e48811ec3b2666df1ded12dc58cf9a33f",
+    "trials.jsonl": "74b37a09d2eab2cffd05254f407f73c11ffe1bba557dcc0de8d49f300356b16a",
+    "summary.json": "66dc5170f982883670fd05c9945ea67ddd9011df970367e887475adddad060c8"
+  }
+}

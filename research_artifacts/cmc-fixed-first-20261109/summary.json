@@ -1,0 +1,131 @@
+{
+  "methods": {
+    "First": {
+      "witness": 6,
+      "by_scene": {
+        "A": 6,
+        "B": 0
+      },
+      "recall": 0.20895572148437747,
+      "solution_fraction": 0.0019616182525562386,
+      "median_nodes": 256.0,
+      "median_solve_ms": 1.0998499928973615,
+      "median_selection_ms": null
+    },
+    "Qwen": {
+      "witness": 9,
+      "by_scene": {
+        "A": 9,
+        "B": 0
+      },
+      "recall": 0.22722995992012188,
+      "solution_fraction": 0.0035432493552803694,
+      "median_nodes": 320.0,
+      "median_solve_ms": 1.3187500007916242,
+      "median_selection_ms": 2843.602600012673
+    },
+    "Rule": {
+      "witness": 6,
+      "by_scene": {
+        "A": 6,
+        "B": 0
+      },
+      "recall": 0.22700663363674656,
+      "solution_fraction": 0.0022346476922523446,
+      "median_nodes": 320.0,
+      "median_solve_ms": 1.3362999889068305,
+      "median_selection_ms": 0.11310001718811691
+    },
+    "Support": {
+      "witness": 8,
+      "by_scene": {
+        "A": 8,
+        "B": 0
+      },
+      "recall": 0.2355730569263137,
+      "solution_fraction": 0.004321003796214642,
+      "median_nodes": 320.0,
+      "median_solve_ms": 1.3255999947432429,
+      "median_selection_ms": 3.263549995608628
+    }
+  },
+  "statuses": {
+    "valid": 24
+  },
+  "hint_counts": {
+    "transmission": 3,
+    "conveyor": 3,
+    "positioner": 5,
+    "drive": 1,
+    "gearbox": 8,
+    "coupling": 3,
+    "shaft_support": 1
+  },
+  "added": 24,
+  "valid_witnesses": 9,
+  "paired": {
+    "First": {
+      "n": 24,
+      "a_success": 9,
+      "b_success": 6,
+      "difference": 0.125,
+      "ci95": [
+        0.0,
+        0.25
+      ],
+      "a_only": 3,
+      "b_only": 0,
+      "p_exact": 0.25
+    },
+    "Rule": {
+      "n": 24,
+      "a_success": 9,
+      "b_success": 6,
+      "difference": 0.125,
+      "ci95": [
+        0.0,
+        0.25
+      ],
+      "a_only": 3,
+      "b_only": 0,
+      "p_exact": 0.25
+    },
+    "Support": {
+      "n": 24,
+      "a_success": 9,
+      "b_success": 8,
+      "difference": 0.041666666666666664,
+      "ci95": [
+        -0.08333333333333333,
+        0.16666666666666666
+      ],
+      "a_only": 2,
+      "b_only": 1,
+      "p_exact": 1.0
+    }
+  },
+  "telemetry": {
+    "free": {
+      "responses": 72,
+      "prompt_tokens": 271719,
+      "prompt_processed": 86822,
+      "generated_tokens": 4470,
+      "engine_median_ms": 1165.075
+    },
+    "grammar_first": {
+      "responses": 24,
+      "prompt_tokens": 90573,
+      "prompt_processed": 86774,
+      "generated_tokens": 1488,
+      "engine_median_ms": 3855.964
+    },
+    "fixed_second": {
+      "responses": 24,
+      "prompt_tokens": 91322,
+      "prompt_processed": 89542,
+      "generated_tokens": 383,
+      "engine_median_ms": 2838.8804999999998
+    },
+    "second_prompt_tokens": 91322
+  }
+}

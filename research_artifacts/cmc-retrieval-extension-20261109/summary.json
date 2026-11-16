@@ -1,0 +1,228 @@
+{
+  "full_feasible": 48,
+  "strata": {
+    "A-configuration": 12,
+    "A-repair": 12,
+    "B-configuration": 12,
+    "B-repair": 12
+  },
+  "eligible": [
+    {
+      "valid": 48
+    },
+    {
+      "valid": 48
+    }
+  ],
+  "methods": {
+    "Initial": {
+      "witness": 4,
+      "by_scene": {
+        "A": 4,
+        "B": 0
+      },
+      "recall": 0.14746179068672396,
+      "solution": 0.0003129620007318561,
+      "nodes": 78.10416666666667
+    },
+    "Qwen": {
+      "witness": 11,
+      "by_scene": {
+        "A": 9,
+        "B": 2
+      },
+      "recall": 0.20415295262627295,
+      "solution": 0.0018051495502831598,
+      "nodes": 217.625
+    },
+    "Qwen2": {
+      "witness": 14,
+      "by_scene": {
+        "A": 11,
+        "B": 3
+      },
+      "recall": 0.21762911331914286,
+      "solution": 0.0025014912153491532,
+      "nodes": 262.2083333333333
+    },
+    "Rule": {
+      "witness": 14,
+      "by_scene": {
+        "A": 8,
+        "B": 6
+      },
+      "recall": 0.22758880818662716,
+      "solution": 0.0030283922626997057,
+      "nodes": 209
+    },
+    "Rule2": {
+      "witness": 14,
+      "by_scene": {
+        "A": 10,
+        "B": 4
+      },
+      "recall": 0.2239833192546843,
+      "solution": 0.0031379684708680946,
+      "nodes": 265.0625
+    },
+    "Support": {
+      "witness": 25,
+      "by_scene": {
+        "A": 14,
+        "B": 11
+      },
+      "recall": 0.2371094204847499,
+      "solution": 0.008285343045136468,
+      "nodes": 182.83333333333334
+    },
+    "Support2": {
+      "witness": 18,
+      "by_scene": {
+        "A": 10,
+        "B": 8
+      },
+      "recall": 0.22679948340738793,
+      "solution": 0.004392683416053273,
+      "nodes": 237.54166666666666
+    },
+    "BM25": {
+      "witness": 11,
+      "by_scene": {
+        "A": 8,
+        "B": 3
+      },
+      "recall": 0.21330589778240863,
+      "solution": 0.0017054043739149153,
+      "nodes": 224.77083333333334
+    },
+    "E5": {
+      "witness": 9,
+      "by_scene": {
+        "A": 8,
+        "B": 1
+      },
+      "recall": 0.21119690694525944,
+      "solution": 0.001540324578029064,
+      "nodes": 223.47916666666666
+    }
+  },
+  "first_pairs": [
+    {
+      "comparator": "Rule",
+      "n": 48,
+      "a_success": 11,
+      "b_success": 14,
+      "difference": -0.0625,
+      "ci95": [
+        -0.1875,
+        0.0625
+      ],
+      "a_only": 4,
+      "b_only": 7,
+      "p_exact": 0.548828125,
+      "p_holm": 1.0
+    },
+    {
+      "comparator": "Support",
+      "n": 48,
+      "a_success": 11,
+      "b_success": 25,
+      "difference": -0.2916666666666667,
+      "ci95": [
+        -0.4375,
+        -0.14583333333333334
+      ],
+      "a_only": 2,
+      "b_only": 16,
+      "p_exact": 0.001312255859375,
+      "p_holm": 0.0052490234375
+    },
+    {
+      "comparator": "BM25",
+      "n": 48,
+      "a_success": 11,
+      "b_success": 11,
+      "difference": 0.0,
+      "ci95": [
+        -0.125,
+        0.125
+      ],
+      "a_only": 5,
+      "b_only": 5,
+      "p_exact": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "comparator": "E5",
+      "n": 48,
+      "a_success": 11,
+      "b_success": 9,
+      "difference": 0.041666666666666664,
+      "ci95": [
+        -0.08333333333333333,
+        0.16666666666666666
+      ],
+      "a_only": 6,
+      "b_only": 4,
+      "p_exact": 0.75390625,
+      "p_holm": 1.0
+    }
+  ],
+  "second_pairs": {
+    "Qwen": {
+      "n": 48,
+      "a_success": 14,
+      "b_success": 11,
+      "difference": 0.0625,
+      "ci95": [
+        0.0,
+        0.14583333333333334
+      ],
+      "a_only": 3,
+      "b_only": 0,
+      "p_exact": 0.25
+    },
+    "Rule2": {
+      "n": 48,
+      "a_success": 14,
+      "b_success": 14,
+      "difference": 0.0,
+      "ci95": [
+        -0.08333333333333333,
+        0.08333333333333333
+      ],
+      "a_only": 2,
+      "b_only": 2,
+      "p_exact": 1.0
+    },
+    "Support2": {
+      "n": 48,
+      "a_success": 14,
+      "b_success": 18,
+      "difference": -0.08333333333333333,
+      "ci95": [
+        -0.20833333333333334,
+        0.020833333333333332
+      ],
+      "a_only": 2,
+      "b_only": 6,
+      "p_exact": 0.2890625
+    }
+  },
+  "telemetry": [
+    {
+      "responses": 48,
+      "prompt_tokens": 181147,
+      "prompt_processed": 180019,
+      "generated_tokens": 3024,
+      "engine_median_ms": 3697.5145
+    },
+    {
+      "responses": 48,
+      "prompt_tokens": 182171,
+      "prompt_processed": 181019,
+      "generated_tokens": 773,
+      "engine_median_ms": 2806.125
+    }
+  ]
+}

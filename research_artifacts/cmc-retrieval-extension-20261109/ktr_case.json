@@ -1,0 +1,519 @@
+{
+  "source": "https://www.ktr.com/fileadmin/ktr/media/Tools_Downloads/Drive_technology_en.pdf",
+  "printed_page": 34,
+  "section": "ROTEX Standard Cast iron (GJL), hub component 1",
+  "rows": [
+    [
+      38,
+      12,
+      40,
+      [
+        190,
+        325,
+        405
+      ]
+    ],
+    [
+      42,
+      14,
+      45,
+      [
+        265,
+        450,
+        560
+      ]
+    ],
+    [
+      48,
+      15,
+      52,
+      [
+        310,
+        525,
+        655
+      ]
+    ],
+    [
+      55,
+      20,
+      60,
+      [
+        410,
+        685,
+        825
+      ]
+    ],
+    [
+      65,
+      22,
+      70,
+      [
+        625,
+        940,
+        1175
+      ]
+    ],
+    [
+      75,
+      30,
+      80,
+      [
+        1280,
+        1920,
+        2400
+      ]
+    ]
+  ],
+  "results": [
+    {
+      "shaft_left_mm": 35,
+      "shaft_right_mm": 40,
+      "required_rated_torque_nm": 300,
+      "unary_domains": [
+        6,
+        6,
+        16
+      ],
+      "witnesses": [
+        [
+          38,
+          38,
+          38,
+          "98 Sh-A"
+        ],
+        [
+          38,
+          38,
+          38,
+          "64 Sh-D"
+        ],
+        [
+          42,
+          42,
+          42,
+          "98 Sh-A"
+        ],
+        [
+          42,
+          42,
+          42,
+          "64 Sh-D"
+        ],
+        [
+          48,
+          48,
+          48,
+          "92 Sh-A"
+        ],
+        [
+          48,
+          48,
+          48,
+          "98 Sh-A"
+        ],
+        [
+          48,
+          48,
+          48,
+          "64 Sh-D"
+        ],
+        [
+          55,
+          55,
+          55,
+          "92 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "98 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "92 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ],
+        [
+          75,
+          75,
+          75,
+          "92 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "98 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 40,
+      "shaft_right_mm": 45,
+      "required_rated_torque_nm": 500,
+      "unary_domains": [
+        6,
+        5,
+        11
+      ],
+      "witnesses": [
+        [
+          42,
+          42,
+          42,
+          "64 Sh-D"
+        ],
+        [
+          48,
+          48,
+          48,
+          "98 Sh-A"
+        ],
+        [
+          48,
+          48,
+          48,
+          "64 Sh-D"
+        ],
+        [
+          55,
+          55,
+          55,
+          "98 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "92 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ],
+        [
+          75,
+          75,
+          75,
+          "92 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "98 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 45,
+      "shaft_right_mm": 52,
+      "required_rated_torque_nm": 650,
+      "unary_domains": [
+        5,
+        4,
+        8
+      ],
+      "witnesses": [
+        [
+          48,
+          48,
+          48,
+          "64 Sh-D"
+        ],
+        [
+          55,
+          55,
+          55,
+          "98 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ],
+        [
+          75,
+          75,
+          75,
+          "92 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "98 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 50,
+      "shaft_right_mm": 60,
+      "required_rated_torque_nm": 800,
+      "unary_domains": [
+        4,
+        3,
+        6
+      ],
+      "witnesses": [
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ],
+        [
+          75,
+          75,
+          75,
+          "92 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "98 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 65,
+      "shaft_right_mm": 70,
+      "required_rated_torque_nm": 1500,
+      "unary_domains": [
+        2,
+        2,
+        2
+      ],
+      "witnesses": [
+        [
+          75,
+          75,
+          75,
+          "98 Sh-A"
+        ],
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 30,
+      "shaft_right_mm": 35,
+      "required_rated_torque_nm": 2400,
+      "unary_domains": [
+        6,
+        6,
+        1
+      ],
+      "witnesses": [
+        [
+          75,
+          75,
+          75,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 20,
+      "shaft_right_mm": 70,
+      "required_rated_torque_nm": 300,
+      "unary_domains": [
+        4,
+        2,
+        16
+      ],
+      "witnesses": []
+    },
+    {
+      "shaft_left_mm": 25,
+      "shaft_right_mm": 60,
+      "required_rated_torque_nm": 300,
+      "unary_domains": [
+        5,
+        3,
+        16
+      ],
+      "witnesses": [
+        [
+          55,
+          55,
+          55,
+          "92 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "98 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "92 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ]
+      ]
+    },
+    {
+      "shaft_left_mm": 28,
+      "shaft_right_mm": 52,
+      "required_rated_torque_nm": 500,
+      "unary_domains": [
+        5,
+        4,
+        11
+      ],
+      "witnesses": [
+        [
+          48,
+          48,
+          48,
+          "98 Sh-A"
+        ],
+        [
+          48,
+          48,
+          48,
+          "64 Sh-D"
+        ],
+        [
+          55,
+          55,
+          55,
+          "98 Sh-A"
+        ],
+        [
+          55,
+          55,
+          55,
+          "64 Sh-D"
+        ],
+        [
+          65,
+          65,
+          65,
+          "92 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "98 Sh-A"
+        ],
+        [
+          65,
+          65,
+          65,
+          "64 Sh-D"
+        ]
+      ]
+    }
+  ],
+  "scope": "catalog bore and nominal torque only; no application approval"
+}

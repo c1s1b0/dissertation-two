@@ -2,7 +2,10 @@
   "scope": "Offline replay of archived records and deterministic synthetic experiments",
   "frozen_benchmark": {
     "seed": 20260816,
-    "scenes": ["A", "B"],
+    "scenes": [
+      "A",
+      "B"
+    ],
     "catalog_records_total": 160,
     "roles_per_scene": 4,
     "candidates_per_role": 20,
@@ -10,7 +13,13 @@
     "configuration_tasks_per_scene": 100,
     "scope_conditioned_tasks_per_scene": 100,
     "repeats": 3,
-    "archived_methods": ["B0", "P", "P-LLM", "P-Typed", "P-LLMRepair"],
+    "archived_methods": [
+      "B0",
+      "P",
+      "P-LLM",
+      "P-Typed",
+      "P-LLMRepair"
+    ],
     "terminal_records_in_primary_analysis": 6000,
     "forced_negative_controls": 20
   },
@@ -24,11 +33,27 @@
     "online_regeneration_provided": false
   },
   "matched_controls": {
-    "methods": ["Random", "Rule", "Lexical", "Support"],
+    "methods": [
+      "Random",
+      "Rule",
+      "Lexical",
+      "Support"
+    ],
     "initial_pool_preserved": true,
     "quota": "Observed archived P candidate count per role, task and repeat",
     "random_seed": 20261013,
-    "random_sensitivity_seeds": [20261013,20261014,20261015,20261016,20261017,20261018,20261019,20261020,20261021,20261022],
+    "random_sensitivity_seeds": [
+      20261013,
+      20261014,
+      20261015,
+      20261016,
+      20261017,
+      20261018,
+      20261019,
+      20261020,
+      20261021,
+      20261022
+    ],
     "support_solver_executions": 1200,
     "support_uses_solution_witnesses_for_ranking": false
   },
@@ -44,15 +69,38 @@
   },
   "structural_experiment": {
     "roles": 6,
-    "candidates_per_role": [20,40,80],
-    "topologies": ["chain","star","cycle","dense"],
+    "candidates_per_role": [
+      20,
+      40,
+      80
+    ],
+    "topologies": [
+      "chain",
+      "star",
+      "cycle",
+      "dense"
+    ],
     "dense_display_name": "complete graph",
-    "compatibility_probabilities": [0.15,0.60],
-    "rare_domain_fractions": [0.05,0.25],
-    "other_domain_fraction": 0.70,
+    "compatibility_probabilities": [
+      0.15,
+      0.6
+    ],
+    "rare_domain_fractions": [
+      0.05,
+      0.25
+    ],
+    "other_domain_fraction": 0.7,
     "replicates_per_factor_combination": 10,
-    "retained_per_role": [3,6,12],
-    "selectors": ["Random","Unary","Support"],
+    "retained_per_role": [
+      3,
+      6,
+      12
+    ],
+    "selectors": [
+      "Random",
+      "Unary",
+      "Support"
+    ],
     "cases": 480,
     "restricted_solves": 4320,
     "solver_node_limit": 100000,
@@ -73,5 +121,13 @@
     "reported_positive_token_sum": 170229,
     "complete_token_total": null,
     "monetary_cost": null
+  },
+  "software_correction_20261016": {
+    "live_model_calls": 0,
+    "regression_tests": 14,
+    "total_release_tests": 26,
+    "frozen_inputs_unchanged": true,
+    "corrected_labels": "research_artifacts/software-correction-20261016/corrected_truth_labels.json",
+    "implementation_scope": "offline replay, finite first-witness search; no online deployment or optimality guarantee"
   }
 }
